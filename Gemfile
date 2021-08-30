@@ -57,5 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'solidus', '~> 3.0', '>= 3.0.1'
 gem 'solidus_afterpay', github: 'nebulab/solidus_afterpay', branch: 'immediate-payment-flow'
 gem 'solidus_auth_devise'
-gem 'solidus_auth_devise'
 gem 'afterpay', github: 'nebulab/afterpay-ruby', branch: 'main'
