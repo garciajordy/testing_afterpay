@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/nebulab/solidus_afterpay.git
-  revision: fac3a788e817d46e1a080ca3b16e73b34f497d1b
-  branch: immediate-payment-flow
+  revision: 5e634c254a3e416074cbce15a96a9f9e2d679c5c
+  branch: deferred-payment-flow
   specs:
     solidus_afterpay (0.0.1)
       afterpay (~> 0.1.0)
