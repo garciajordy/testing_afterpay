@@ -28,6 +28,7 @@
           <div data-hook="cart_items">
             <%= render 'spree/orders/form', order_form: order_form %>
           </div>
+              <%= render "solidus_afterpay/afterpay_checkout_button" %>
               <%= content_tag("afterpay-placement", nil, data: {amount: @order.amount.to_f, locale: "en_US", currency: "USD", size: "xs"}) %>
           <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
             <%= button_tag t("spree.update"), class: "primary", id: "update-button" %>
