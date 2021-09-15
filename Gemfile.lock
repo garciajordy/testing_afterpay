@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nebulab/solidus_afterpay.git
-  revision: c45179bfdb67a0484dc31514cb1ed719c7ce5ab7
+  revision: 7a4dde365bb89178ad867cbf92235c20abb86c5c
   branch: main
   specs:
     solidus_afterpay (0.1.0)
