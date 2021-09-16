@@ -4,13 +4,6 @@
 %>
 
 <% content_for :head do %>
-  <script
-    src="https://js.afterpay.com/afterpay-1.x.js"
-    data-analytics-enabled
-    async
-    data-min="15"
-    data-max="35"
-  ></script>
   <% if paginated_products.respond_to?(:total_pages) %>
     <%= rel_next_prev_link_tags paginated_products %>
   <% end %>
