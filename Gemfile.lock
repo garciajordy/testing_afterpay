@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nebulab/solidus_afterpay.git
-  revision: 7a4dde365bb89178ad867cbf92235c20abb86c5c
+  revision: 5e0008dab28171a6beb3786f58b0dfdaf7eb1015
   branch: main
   specs:
     solidus_afterpay (0.1.0)
@@ -134,7 +134,7 @@ GEM
       activerecord (>= 4.2, < 7)
     erubi (1.10.0)
     execjs (2.8.1)
-    faraday (1.7.2)
+    faraday (1.8.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
