@@ -18,8 +18,11 @@
           <div data-hook="cart_items">
             <%= render 'spree/orders/form', order_form: order_form %>
           </div>
-              <%= render "solidus_afterpay/afterpay_checkout_button" %>
-              <%= content_tag("afterpay-placement", nil, data: {amount: @order.amount.to_f, locale: "en_US", currency: "USD", size: "xs"}) %>
+              <% if @order.line_items.none?{|item| ::SolidusAfterpay::PaymentMethod.active.first.excluded_product?(item.variant.product)} %>
+                <%= render "solidus_afterpay/afterpay_checkout_button" %>
+                <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, product: @order.line_items.first.variant.product, data: { amount: @order.amount.to_f, locale: "en_US", currency: "USD", size: "xs" } %>
+              <% end %>
+
           <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
             <%= button_tag t("spree.update"), class: "primary", id: "update-button" %>
            

@@ -35,7 +35,8 @@
             <span class="price selling" itemprop="price" content="<%= @product.price_for(current_pricing_options).to_d %>">
               <%= display_price(@product) %>
             </span>
-              <%= content_tag("afterpay-placement", nil, data: {amount: @product.price, locale: "en_US", currency: "USD", size: "xs"}) %>
+              <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, product: @product, data: { amount: @product.price, locale: "en_US", currency: "USD", size: "xs" } %>
+
             <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
           </div>
 
