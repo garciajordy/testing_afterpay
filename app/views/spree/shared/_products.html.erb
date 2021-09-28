@@ -36,8 +36,8 @@
               <span class="price selling" itemprop="price" content="<%= price.to_d %>">
                 <%= price.to_html %>
               </span>
-              <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, product: product, data: { amount: product.price, locale: "en_US", currency: "USD", size: "xs" } %>
             <% end %>
+              <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, product: product, data: { amount: product.price, locale: "en_US", currency: "USD", size: "xs" } %>
             <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
           </span>
         <% end %>
