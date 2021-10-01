@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/nebulab/solidus_afterpay.git
-  revision: 5e0008dab28171a6beb3786f58b0dfdaf7eb1015
+  revision: cc5015bb1705dc02f05d851bda73e73a129d1740
   branch: main
   specs:
     solidus_afterpay (0.1.0)
-      afterpay (~> 0.2.0)
+      afterpay (~> 0.3.0)
       solidus_core (>= 2.0.0, < 4)
       solidus_support (~> 0.5)
 
@@ -79,7 +79,7 @@ GEM
       activerecord (>= 4.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    afterpay (0.2.0)
+    afterpay (0.3.0)
       faraday (~> 1.0)
       faraday_middleware (~> 1.0)
       hashie (~> 4.0)
