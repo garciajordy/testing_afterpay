@@ -72,7 +72,8 @@
   </tbody>
 </table>
 
-        <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, products: order.line_items.map{|line_item| line_item.product}, data: { amount: order.amount.to_f, locale: "en_US", currency: "USD", size: "xs" } %>
+
+        <%= render "spree/shared/afterpay_messaging", min: nil, max: nil, products: order.line_items.map{|line_item| line_item.product}, data: { amount: order.display_order_total_after_store_credit.money.fractional / 100.0, locale: "en_US", currency: "USD", size: "xs" } %>
 <% if order.state == 'payment' %>
   <%= render 'coupon_code', order: order %>
 <% end %>
